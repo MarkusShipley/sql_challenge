@@ -59,7 +59,7 @@ CREATE TABLE dept_manager(
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no))
 	
 	
-select * from dept_managers
+select * from dept_manager
 
 --Creating salaries table
 
@@ -91,7 +91,7 @@ select * from titles
 --Within PGAdmin.  Finally shortent the contstraint name to just a few characters after hours for f cursewording with it
 --and get the "Query returned successfully in 142 msec.
 "
-ALTER TABLE employees ADD CONSTRAINT distfk FOREIGN KEY (emp_title_id) REFERENCES titles (emp_title_id);
+ALTER TABLE employees ADD CONSTRAINT deptfk FOREIGN KEY (emp_title_id) REFERENCES titles (emp_title_id);
 
 --Checking the employees table now
 
